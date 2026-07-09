@@ -6,12 +6,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "icons:generate": "node scripts/generate-icons.mjs",
+    "cap:sync": "npx cap sync android",
+    "cap:open": "npx cap open android",
+    "android:dev": "CAPACITOR_SERVER_URL=http://10.0.2.2:3000 npx cap sync android && npx cap open android",
+    "android:prod": "CAPACITOR_SERVER_URL=$NEXT_PUBLIC_SITE_URL npx cap sync android && npx cap open android"
   },
   "dependencies": {
+    "@capacitor/android": "^8.4.1",
+    "@capacitor/app": "^8.1.0",
+    "@capacitor/cli": "^7.6.7",
+    "@capacitor/core": "^8.4.1",
+    "@capacitor/splash-screen": "^8.0.1",
+    "@capacitor/status-bar": "^8.0.2",
+    "@tailwindcss/typography": "^0.5.20",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.42.2",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^1.23.0",
     "next": "16.2.10",
+    "next-mdx-remote": "^6.0.0",
+    "razorpay": "^2.9.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "resend": "^6.17.1",
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -1,0 +1,115 @@
+[
+  {
+    "id": "alpine-dawn-print",
+    "slug": "alpine-dawn-print",
+    "title": "Alpine Dawn",
+    "description": "A breathtaking mountain sunrise captured at dawn. Museum-quality fine art print on archival matte paper.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "category": "landscapes",
+    "featured": true,
+    "variants": [
+      { "id": "8x10", "label": "8×10 Print", "price": 2499 },
+      { "id": "16x20", "label": "16×20 Print", "price": 4999 },
+      { "id": "24x36", "label": "24×36 Print", "price": 8999 }
+    ]
+  },
+  {
+    "id": "golden-hour-vows-print",
+    "slug": "golden-hour-vows-print",
+    "title": "Golden Hour Vows",
+    "description": "A romantic wedding moment bathed in golden light. Perfect for celebrating your special day on the wall.",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+    "category": "weddings",
+    "featured": true,
+    "variants": [
+      { "id": "8x10", "label": "8×10 Print", "price": 2499 },
+      { "id": "16x20", "label": "16×20 Print", "price": 4999 },
+      { "id": "24x36", "label": "24×36 Print", "price": 8999 }
+    ]
+  },
+  {
+    "id": "window-light-print",
+    "slug": "window-light-print",
+    "title": "Window Light",
+    "description": "An intimate portrait study in natural window light. Soft, timeless, and beautifully composed.",
+    "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+    "category": "portraits",
+    "featured": true,
+    "variants": [
+      { "id": "8x10", "label": "8×10 Print", "price": 2499 },
+      { "id": "16x20", "label": "16×20 Print", "price": 4999 },
+      { "id": "24x36", "label": "24×36 Print", "price": 8999 }
+    ]
+  },
+  {
+    "id": "misty-valley-print",
+    "slug": "misty-valley-print",
+    "title": "Misty Valley",
+    "description": "Morning fog rolling through a forest valley. A serene landscape for any living space.",
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80",
+    "category": "landscapes",
+    "featured": false,
+    "variants": [
+      { "id": "8x10", "label": "8×10 Print", "price": 2499 },
+      { "id": "16x20", "label": "16×20 Print", "price": 4999 },
+      { "id": "24x36", "label": "24×36 Print", "price": 8999 }
+    ]
+  },
+  {
+    "id": "live-energy-print",
+    "slug": "live-energy-print",
+    "title": "Live Energy",
+    "description": "The electric atmosphere of a live concert captured in a single frame. Bold and dynamic.",
+    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
+    "category": "events",
+    "featured": false,
+    "variants": [
+      { "id": "8x10", "label": "8×10 Print", "price": 2499 },
+      { "id": "16x20", "label": "16×20 Print", "price": 4999 },
+      { "id": "24x36", "label": "24×36 Print", "price": 8999 }
+    ]
+  },
+  {
+    "id": "mirror-lake-print",
+    "slug": "mirror-lake-print",
+    "title": "Mirror Lake",
+    "description": "Perfect reflections at sunset. A calming centerpiece for home or office.",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
+    "category": "landscapes",
+    "featured": true,
+    "variants": [
+      { "id": "8x10", "label": "8×10 Print", "price": 2499 },
+      { "id": "16x20", "label": "16×20 Print", "price": 4999 },
+      { "id": "24x36", "label": "24×36 Print", "price": 8999 },
+      { "id": "canvas-24x36", "label": "24×36 Canvas", "price": 11999 }
+    ]
+  },
+  {
+    "id": "garden-ceremony-print",
+    "slug": "garden-ceremony-print",
+    "title": "Garden Ceremony",
+    "description": "A sunlit garden wedding ceremony. Elegant and full of natural beauty.",
+    "image": "https://images.unsplash.com/photo-1465495976277-14efa3ebe1c4?w=800&q=80",
+    "category": "weddings",
+    "featured": false,
+    "variants": [
+      { "id": "8x10", "label": "8×10 Print", "price": 2499 },
+      { "id": "16x20", "label": "16×20 Print", "price": 4999 },
+      { "id": "24x36", "label": "24×36 Print", "price": 8999 }
+    ]
+  },
+  {
+    "id": "forest-path-print",
+    "slug": "forest-path-print",
+    "title": "Forest Path",
+    "description": "Sunbeams filtering through ancient trees along a woodland trail.",
+    "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+    "category": "fine-art",
+    "featured": false,
+    "variants": [
+      { "id": "8x10", "label": "8×10 Print", "price": 2499 },
+      { "id": "16x20", "label": "16×20 Print", "price": 4999 },
+      { "id": "24x36", "label": "24×36 Print", "price": 8999 }
+    ]
+  }
+]

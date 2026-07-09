@@ -1,0 +1,150 @@
+{
+  "weddings": [
+    {
+      "id": "wedding-01",
+      "src": "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80",
+      "alt": "Bride and groom walking through golden hour light",
+      "title": "Golden Hour Vows",
+      "featured": true
+    },
+    {
+      "id": "wedding-02",
+      "src": "https://images.unsplash.com/photo-1465495976277-14efa3ebe1c4?w=1200&q=80",
+      "alt": "Wedding ceremony in a sunlit garden",
+      "title": "Garden Ceremony",
+      "featured": true
+    },
+    {
+      "id": "wedding-03",
+      "src": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&q=80",
+      "alt": "Close-up of wedding rings on hands",
+      "title": "Forever Rings",
+      "featured": false
+    },
+    {
+      "id": "wedding-04",
+      "src": "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&q=80",
+      "alt": "Couple dancing at wedding reception",
+      "title": "First Dance",
+      "featured": true
+    },
+    {
+      "id": "wedding-05",
+      "src": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1200&q=80",
+      "alt": "Wedding bouquet with soft bokeh",
+      "title": "Blooming Love",
+      "featured": false
+    }
+  ],
+  "portraits": [
+    {
+      "id": "portrait-01",
+      "src": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&q=80",
+      "alt": "Woman portrait with natural window light",
+      "title": "Window Light",
+      "featured": true
+    },
+    {
+      "id": "portrait-02",
+      "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80",
+      "alt": "Elegant portrait of a woman outdoors",
+      "title": "Soft Gaze",
+      "featured": true
+    },
+    {
+      "id": "portrait-03",
+      "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80",
+      "alt": "Man portrait with warm tones",
+      "title": "Quiet Confidence",
+      "featured": false
+    },
+    {
+      "id": "portrait-04",
+      "src": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200&q=80",
+      "alt": "Portrait with wind in hair",
+      "title": "Free Spirit",
+      "featured": true
+    },
+    {
+      "id": "portrait-05",
+      "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200&q=80",
+      "alt": "Bright smiling portrait outdoors",
+      "title": "Radiant Joy",
+      "featured": false
+    }
+  ],
+  "events": [
+    {
+      "id": "event-01",
+      "src": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80",
+      "alt": "Concert crowd with stage lights",
+      "title": "Live Energy",
+      "featured": true
+    },
+    {
+      "id": "event-02",
+      "src": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&q=80",
+      "alt": "Corporate event with speakers on stage",
+      "title": "On Stage",
+      "featured": false
+    },
+    {
+      "id": "event-03",
+      "src": "https://images.unsplash.com/photo-1505236858219-8359eb4e4f2d?w=1200&q=80",
+      "alt": "Birthday celebration with confetti",
+      "title": "Celebration Night",
+      "featured": true
+    },
+    {
+      "id": "event-04",
+      "src": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80",
+      "alt": "Festival crowd at sunset",
+      "title": "Festival Sunset",
+      "featured": false
+    },
+    {
+      "id": "event-05",
+      "src": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80",
+      "alt": "DJ performing at a nightclub event",
+      "title": "Night Pulse",
+      "featured": true
+    }
+  ],
+  "landscapes": [
+    {
+      "id": "landscape-01",
+      "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+      "alt": "Snow-capped mountain range at dawn",
+      "title": "Alpine Dawn",
+      "featured": true
+    },
+    {
+      "id": "landscape-02",
+      "src": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
+      "alt": "Misty forest valley in morning light",
+      "title": "Misty Valley",
+      "featured": true
+    },
+    {
+      "id": "landscape-03",
+      "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+      "alt": "Sun rays through mountain peaks",
+      "title": "Mountain Light",
+      "featured": false
+    },
+    {
+      "id": "landscape-04",
+      "src": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+      "alt": "Lake reflecting mountains at sunset",
+      "title": "Mirror Lake",
+      "featured": true
+    },
+    {
+      "id": "landscape-05",
+      "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
+      "alt": "Sunlit path through a dense forest",
+      "title": "Forest Path",
+      "featured": false
+    }
+  ]
+}

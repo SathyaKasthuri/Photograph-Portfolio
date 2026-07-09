@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lens & Light — Photographer Portfolio
+
+A full-featured photography portfolio built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- **Home** — Hero, featured gallery, category previews, testimonials, CTA
+- **Gallery** — Categorized collections with masonry grid and lightbox viewer
+- **About** — Bio, approach, stats, and gear list
+- **Blog** — MDX-powered posts with cover images
+- **Contact** — Inquiry form with email delivery via Resend
+- **Shop** — Fine art print catalog with cart and Razorpay checkout (UPI, cards, net banking)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy `.env.example` to `.env.local` and fill in your values:
 
-## Learn More
+```bash
+cp .env.example .env.local
+```
 
-To learn more about Next.js, take a look at the following resources:
+| Variable | Description |
+|---|---|
+| `RESEND_API_KEY` | API key from [resend.com](https://resend.com) for contact form and order emails |
+| `CONTACT_EMAIL` | Email address where inquiries and orders are sent |
+| `RAZORPAY_KEY_ID` | Key ID from [Razorpay Dashboard](https://dashboard.razorpay.com/app/keys) |
+| `RAZORPAY_KEY_SECRET` | Key Secret from Razorpay Dashboard (server-side only) |
+| `NEXT_PUBLIC_RAZORPAY_KEY_ID` | Same as Key ID (used by checkout UI) |
+| `RAZORPAY_WEBHOOK_SECRET` | Optional webhook secret for `/api/webhooks/razorpay` |
+| `NEXT_PUBLIC_SITE_URL` | Your site URL (e.g. `https://yoursite.com`) |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Without Razorpay keys, checkout falls back to email-only orders (dev mode).
+Without `RESEND_API_KEY`, order emails are logged to the server console.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Razorpay Setup (India)
+
+1. Sign up free at [razorpay.com](https://razorpay.com) — no monthly fee, pay only per transaction
+2. Go to **Dashboard → Account & Settings → API Keys**
+3. Generate **Test Mode** keys and add to `.env.local`:
+   ```bash
+   RAZORPAY_KEY_ID=rzp_test_...
+   RAZORPAY_KEY_SECRET=...
+   NEXT_PUBLIC_RAZORPAY_KEY_ID=rzp_test_...
+   ```
+4. Test UPI/card: use Razorpay test cards from [their docs](https://razorpay.com/docs/payments/payments/test-card-details/)
+
+### Razorpay Webhook (optional)
+
+1. Dashboard → **Webhooks** → Add endpoint: `https://yoursite.com/api/webhooks/razorpay`
+2. Select event: `payment.captured`
+3. Copy signing secret to `RAZORPAY_WEBHOOK_SECRET`
+
+## Content
+
+| Location | Purpose |
+|---|---|
+| `data/galleries.json` | Gallery images organized by category |
+| `data/products.json` | Shop products with sizes and prices |
+| `data/testimonials.json` | Client testimonials |
+| `content/blog/*.mdx` | Blog posts (Markdown + frontmatter) |
+| `public/images/` | Local image assets (optional — currently uses Unsplash URLs) |
+
+## Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push this repo to GitHub
+2. Import the project at [vercel.com/new](https://vercel.com/new)
+3. Add `RESEND_API_KEY`, `CONTACT_EMAIL`, and Razorpay keys as environment variables
+4. Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Vercel will auto-detect Next.js and configure the build.
+
+## Android App
+
+This project includes a native **Android app** via Capacitor. See **[ANDROID.md](./ANDROID.md)** for full setup.
+
+Quick start (after deploying to Vercel):
+
+```bash
+CAPACITOR_SERVER_URL=https://your-app.vercel.app npm run cap:sync
+npm run cap:open
+```
+
+Then run from Android Studio on an emulator or device.
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- next-mdx-remote
+- Razorpay
+- Resend
+- Capacitor (Android)
