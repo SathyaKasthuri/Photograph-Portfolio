@@ -19,7 +19,7 @@ import * as SplashScreen from "expo-splash-screen";
 //   const SITE_URL = "http://10.0.2.2:3000";   // Android emulator → localhost
 //   const SITE_URL = "http://192.168.x.x:3000"; // Physical phone on same Wi-Fi
 // ─────────────────────────────────────────────────────────────────────────────
-const SITE_URL = "http://10.0.2.2:3000";
+const SITE_URL = "https://lens-and-light-portfolio.vercel.app";
 
 // Keep the splash screen visible until the page is loaded
 SplashScreen.preventAutoHideAsync();
