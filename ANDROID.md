@@ -1,116 +1,148 @@
-# Android App — Lens & Light
+# Mobile App — Lens & Light (Expo)
 
-Your portfolio runs as a native Android app using [Capacitor](https://capacitorjs.com). The app is a native shell that loads your Next.js website (shop, gallery, payments, blog — all included).
+Your portfolio runs as a native Android app powered by **Expo** and **React Native WebView**.
+The Expo app (`mobile/`) loads your Next.js website in a full-screen WebView — all features (shop, gallery, payments, blog) are included automatically.
+
+## Project Structure
+
+```
+mobile/              ← Expo app (self-contained)
+  App.tsx            ← WebView loading your Next.js site
+  app.json           ← Expo config (name, package, icon, splash)
+  eas.json           ← EAS Build profiles
+  package.json       ← Expo dependencies
+  assets/            ← App icon and splash screen
+```
+
+---
 
 ## Prerequisites
 
-1. **Android Studio** — [developer.android.com/studio](https://developer.android.com/studio)
-2. **Java JDK 17+** (installed with Android Studio)
-3. **Deployed website** OR local dev server running
-
-> The Android app loads your site from a URL. API routes (Razorpay, contact form, blog) run on your Next.js server — deploy to Vercel for production, or use local dev for testing.
-
----
-
-## Option A — Production (recommended)
-
-### 1. Deploy your website
-
-Push to GitHub and deploy on [Vercel](https://vercel.com). Note your URL, e.g. `https://lens-and-light.vercel.app`.
-
-Add all env vars on Vercel (`RAZORPAY_*`, `RESEND_API_KEY`, etc.).
-
-### 2. Point the Android app to your site
-
-```bash
-CAPACITOR_SERVER_URL=https://your-app.vercel.app npm run cap:sync
-```
-
-### 3. Open in Android Studio and run
-
-```bash
-npm run cap:open
-```
-
-In Android Studio: **Run ▶** on an emulator or connected phone.
+1. **Node.js 18+**
+2. **Expo CLI**: `npm install -g expo-cli` *(optional — can use npx)*
+3. **EAS CLI**: `npm install -g eas-cli`
+4. **Expo Account** (free): [expo.dev](https://expo.dev) — required for EAS builds
+5. **Expo Go app** on your phone: [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) | [iOS](https://apps.apple.com/app/expo-go/id982107779)
 
 ---
 
-## Option B — Local development (emulator)
+## Option A — Test instantly with Expo Go (Recommended for dev)
 
-### 1. Start the Next.js server
+### 1. Start your Next.js server
+
+```bash
+# In the project root:
+npm run dev -- -H 0.0.0.0
+```
+
+### 2. Set your local IP in App.tsx
+
+Edit `mobile/App.tsx` line 20:
+
+```ts
+// Physical phone — use your Mac's local IP address
+const SITE_URL = "http://192.168.x.x:3000";
+```
+
+> Find your IP: run `ipconfig getifaddr en0` in Terminal.
+
+### 3. Start Expo
+
+```bash
+cd mobile
+npx expo start
+```
+
+Scan the QR code with the **Expo Go** app on your phone. ✅
+
+---
+
+## Option B — Cloud APK build with EAS (No Android Studio needed)
+
+### 1. Login to your Expo account
+
+```bash
+cd mobile
+npx eas-cli login
+```
+
+### 2. Link your EAS project (one-time setup)
+
+```bash
+npx eas-cli init
+```
+
+### 3. Set your production URL in App.tsx
+
+Edit `mobile/App.tsx` line 20:
+
+```ts
+const SITE_URL = "https://your-app.vercel.app";
+```
+
+### 4. Build the APK
+
+```bash
+npx eas-cli build --profile preview --platform android
+```
+
+EAS builds in the cloud — no Android Studio required. Download the `.apk` from the link it provides and install directly on your phone.
+
+---
+
+## Option C — Local development on Android emulator
+
+### 1. Start Next.js
 
 ```bash
 npm run dev
 ```
 
-### 2. Sync Android with emulator URL
+### 2. Set emulator URL in App.tsx
 
-The emulator uses `10.0.2.2` to reach your computer's `localhost`:
+Edit `mobile/App.tsx` line 20:
 
-```bash
-npm run android:dev
+```ts
+// Android emulator uses 10.0.2.2 to reach your computer's localhost
+const SITE_URL = "http://10.0.2.2:3000";
 ```
 
-This runs `cap sync` with `http://10.0.2.2:3000` and opens Android Studio.
-
-### 3. Run on emulator
-
-Click **Run ▶** in Android Studio.
-
----
-
-## Option C — Local development (physical phone)
-
-1. Find your computer's local IP: `ipconfig` (Windows) or `ifconfig` (Mac)
-2. Start Next.js: `npm run dev -- -H 0.0.0.0`
-3. Sync with your IP:
+### 3. Start Expo with Android
 
 ```bash
-CAPACITOR_SERVER_URL=http://192.168.1.5:3000 npm run cap:sync
-npm run cap:open
+cd mobile
+npx expo start --android
 ```
 
-4. Phone and computer must be on the **same Wi‑Fi**.
+---
+
+## Changing the URL (Development ↔ Production)
+
+Edit `mobile/App.tsx` — look for the `SITE_URL` constant near the top:
+
+```ts
+// Development (emulator)
+const SITE_URL = "http://10.0.2.2:3000";
+
+// Development (physical phone on Wi-Fi)
+const SITE_URL = "http://192.168.1.5:3000";
+
+// Production (Vercel deployment)
+const SITE_URL = "https://your-app.vercel.app";
+```
 
 ---
 
-## Build APK for sharing
-
-In Android Studio:
-
-1. **Build → Build Bundle(s) / APK(s) → Build APK(s)**
-2. APK location: `android/app/build/outputs/apk/debug/app-debug.apk`
-
-For Play Store release:
-
-1. **Build → Generate Signed Bundle / APK**
-2. Create a keystore (first time only)
-3. Upload the `.aab` file to [Google Play Console](https://play.google.com/console)
-
----
-
-## App icon
-
-Replace placeholder icons:
-
-- `public/icons/icon-192.png`
-- `public/icons/icon-512.png`
-
-Then regenerate Android launcher icons using [Android Asset Studio](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html) or Android Studio's **Image Asset** tool.
-
-Run `npm run cap:sync` after updating icons.
-
----
-
-## Useful commands
+## Useful Commands
 
 | Command | Description |
 |---------|-------------|
-| `npm run cap:sync` | Copy web assets + config to Android project |
-| `npm run cap:open` | Open project in Android Studio |
-| `npm run android:dev` | Sync for emulator + open Android Studio |
-| `npm run icons:generate` | Regenerate placeholder PWA icons |
+| `npm run mobile` | Start Expo dev server |
+| `npm run mobile:android` | Start Expo + open Android |
+| `npm run mobile:build` | EAS cloud APK build |
+| `cd mobile && npx expo start` | Start from mobile folder |
+| `cd mobile && npx eas-cli build --profile preview --platform android` | Cloud APK |
+| `cd mobile && npx eas-cli build --profile production --platform android` | Play Store AAB |
 
 ---
 
@@ -118,22 +150,18 @@ Run `npm run cap:sync` after updating icons.
 
 | Issue | Fix |
 |-------|-----|
-| Blank white screen | Set `CAPACITOR_SERVER_URL` and run `npm run cap:sync` |
+| Blank white screen | Check `SITE_URL` in `App.tsx`; ensure Next.js is running |
 | Can't connect on emulator | Use `http://10.0.2.2:3000`, not `localhost` |
-| Can't connect on phone | Use your PC's IP; run dev with `-H 0.0.0.0` |
-| Razorpay not opening | Ensure site uses HTTPS in production |
-| Java not found | Install Android Studio + JDK 17 |
+| Can't connect on phone | Use your Mac's local IP; run dev with `-H 0.0.0.0` |
+| Razorpay not working | Set `SITE_URL` to your HTTPS Vercel URL |
+| EAS build fails | Run `npx eas-cli init` inside `mobile/` first |
+| Expo Go shows error | Ensure your Next.js server is running and reachable |
 
 ---
 
-## Project structure
+## App Details
 
-```
-android/                  # Native Android project (Capacitor)
-capacitor.config.ts       # App ID, name, server URL
-public/mobile/index.html  # Fallback splash while loading
-components/native/        # Status bar, back button handling
-```
-
-App ID: `com.lensandlight.portfolio`  
-App name: **Lens & Light**
+- **App ID**: `com.lensandlight.portfolio`
+- **App name**: **Lens & Light**
+- **Build system**: Expo + EAS Build
+- **Test tool**: Expo Go (no install required)

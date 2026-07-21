@@ -8,18 +8,11 @@
     "start": "next start",
     "lint": "eslint",
     "icons:generate": "node scripts/generate-icons.mjs",
-    "cap:sync": "npx cap sync android",
-    "cap:open": "npx cap open android",
-    "android:dev": "CAPACITOR_SERVER_URL=http://10.0.2.2:3000 npx cap sync android && npx cap open android",
-    "android:prod": "CAPACITOR_SERVER_URL=$NEXT_PUBLIC_SITE_URL npx cap sync android && npx cap open android"
+    "mobile": "cd mobile && expo start",
+    "mobile:android": "cd mobile && expo start --android",
+    "mobile:build": "cd mobile && eas build --profile preview --platform android"
   },
   "dependencies": {
-    "@capacitor/android": "^8.4.1",
-    "@capacitor/app": "^8.1.0",
-    "@capacitor/cli": "^7.6.7",
-    "@capacitor/core": "^8.4.1",
-    "@capacitor/splash-screen": "^8.0.1",
-    "@capacitor/status-bar": "^8.0.2",
     "@tailwindcss/typography": "^0.5.20",
     "clsx": "^2.1.1",
     "framer-motion": "^12.42.2",
