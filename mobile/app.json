@@ -2,6 +2,7 @@
   "expo": {
     "name": "Lens & Light",
     "slug": "photographer-portfolio",
+    "owner": "sathvik1352",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,10 +27,12 @@
     "web": {
       "favicon": "./assets/icon.png"
     },
-    "plugins": ["expo-splash-screen"],
+    "plugins": [
+      "expo-splash-screen"
+    ],
     "extra": {
       "eas": {
-        "projectId": ""
+        "projectId": "4a738f13-fca1-4dc7-8390-1ea455c22fb6"
       }
     }
   }
