@@ -7,7 +7,7 @@ export default function FeaturedGallery() {
   const featured = getFeaturedImages().slice(0, 8);
 
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
+    <section className="w-full px-6 md:px-12 lg:px-16 py-24">
       <FadeIn>
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div>

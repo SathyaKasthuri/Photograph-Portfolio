@@ -1,11 +1,24 @@
 export type GalleryCategory = "weddings" | "portraits" | "events" | "landscapes";
 
+export interface ExifData {
+  camera: string;
+  lens: string;
+  aperture: string;
+  shutter: string;
+  iso: string;
+  focalLength: string;
+  location: string;
+  year?: string;
+}
+
 export interface GalleryImage {
   id: string;
   src: string;
   alt: string;
   title: string;
   featured?: boolean;
+  exif?: ExifData;
+  story?: string;
 }
 
 export type GalleriesData = Record<GalleryCategory, GalleryImage[]>;
@@ -80,3 +93,42 @@ export const PRODUCT_CATEGORY_LABELS: Record<ProductCategory, string> = {
   landscapes: "Landscapes",
   "fine-art": "Fine Art",
 };
+
+export interface GearItem {
+  id: string;
+  name: string;
+  category: "bodies" | "lenses" | "lighting" | "drone" | "accessories";
+  spec: string;
+  description: string;
+  image: string;
+  favoriteFor: string;
+}
+
+export interface ServicePackage {
+  id: string;
+  title: string;
+  category: string;
+  startingPrice: number;
+  duration: string;
+  deliverables: string[];
+  description: string;
+  popular?: boolean;
+}
+
+export interface ClientGalleryPhoto {
+  id: string;
+  src: string;
+  title: string;
+  aspectRatio?: string;
+}
+
+export interface ClientGallery {
+  id: string;
+  passcode: string;
+  clientName: string;
+  eventTitle: string;
+  date: string;
+  coverImage: string;
+  photos: ClientGalleryPhoto[];
+}
+

@@ -10,8 +10,10 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/services", label: "Services" },
   { href: "/shop", label: "Shop" },
   { href: "/about", label: "About" },
+  { href: "/client-access", label: "Client Access" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
@@ -40,10 +42,10 @@ export default function Navbar() {
           : "bg-background/90 backdrop-blur-md border-b border-border"
       )}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+      <nav className="w-full flex items-center justify-between px-6 md:px-12 lg:px-16 py-5">
         <Link
           href="/"
-          className="font-serif text-xl tracking-wide text-foreground hover:text-accent transition-colors"
+          className="font-serif text-2xl tracking-wide text-foreground hover:text-accent transition-colors font-medium"
         >
           Lens & Light
         </Link>
@@ -54,7 +56,7 @@ export default function Navbar() {
               <Link
                 href={link.href}
                 className={cn(
-                  "text-sm uppercase tracking-widest transition-colors hover:text-accent",
+                  "text-base uppercase tracking-wider font-medium transition-colors hover:text-accent",
                   pathname === link.href ||
                     (link.href !== "/" && pathname.startsWith(link.href))
                     ? "text-accent"

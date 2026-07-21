@@ -1,47 +1,106 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { Award, Camera, MapPin } from "lucide-react";
+
+const HERO_SLIDES = [
+  {
+    src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=85",
+    title: "Golden Hour Vows",
+    location: "Val d'Orcia, Tuscany",
+    camera: "Sony α7R V • FE 85mm f/1.4 GM",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=85",
+    title: "Alpine Dawn",
+    location: "Southern Alps, New Zealand",
+    camera: "Fujifilm GFX 100 II • GF 23mm f/4",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1920&q=85",
+    title: "Window Light Study",
+    location: "Paris, France",
+    camera: "Leica M11 • Summilux 35mm f/1.4",
+  },
+];
+
+const ACCOLADES = [
+  "Leica Master Shot Winner",
+  "Vogue Weddings Feature",
+  "National Geographic Contributor",
+  "World Photography Awards Finalist",
+];
 
 export default function Hero() {
-  return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      <Image
-        src="https://images.unsplash.com/photo-1493863641943-9b67192f0b4c?w=1920&q=80"
-        alt="Photographer capturing a sunset landscape"
-        fill
-        priority
-        className="object-cover"
-        sizes="100vw"
-      />
-      <div className="absolute inset-0 bg-black/50" />
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <motion.p
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const slide = HERO_SLIDES[currentSlide];
+
+  return (
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-black">
+      {/* Background Slideshow */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={slide.src}
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={slide.src}
+            alt={slide.title}
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-black/40 to-black/60" />
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Main Content Overlay */}
+      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center pt-20">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-sm uppercase tracking-[0.3em] text-accent"
+          className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-black/40 backdrop-blur-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-6"
         >
-          Photography Portfolio
-        </motion.p>
+          <Camera size={15} />
+          <span>Julian Vance — Fine Art & Editorial Photography</span>
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="mt-4 font-serif text-5xl leading-tight text-foreground md:text-7xl"
+          className="font-serif text-5xl leading-tight text-foreground sm:text-7xl md:text-8xl font-light tracking-tight"
         >
           Lens & Light
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-6 text-lg text-foreground/80 md:text-xl"
+          className="mt-6 text-xl text-foreground/90 md:text-3xl font-light max-w-3xl mx-auto leading-relaxed"
         >
-          Capturing authentic moments through natural light and timeless storytelling.
+          Capturing human emotion, shadow, and timeless atmospheric beauty across the globe.
         </motion.p>
+
+        {/* Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,17 +109,57 @@ export default function Hero() {
         >
           <Link
             href="/gallery"
-            className="rounded-sm bg-accent px-8 py-3 text-sm font-medium uppercase tracking-widest text-background transition-opacity hover:opacity-90"
+            className="w-full sm:w-auto rounded bg-accent px-9 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-background transition-all hover:opacity-90 shadow-lg shadow-accent/20"
           >
-            View Gallery
+            Explore Portfolio
           </Link>
           <Link
-            href="/contact"
-            className="rounded-sm border border-foreground/30 px-8 py-3 text-sm font-medium uppercase tracking-widest text-foreground transition-colors hover:border-accent hover:text-accent"
+            href="/services"
+            className="w-full sm:w-auto rounded border border-foreground/40 bg-black/30 backdrop-blur-md px-9 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-foreground transition-all hover:border-accent hover:text-accent"
           >
-            Book a Session
+            Commissions & Rates
           </Link>
         </motion.div>
+
+        {/* Accolades Ticker */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-16 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted/90 font-medium"
+        >
+          {ACCOLADES.map((accolade, idx) => (
+            <span key={idx} className="flex items-center gap-2">
+              <Award size={15} className="text-accent" />
+              <span>{accolade}</span>
+            </span>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Bottom Photo EXIF Badge */}
+      <div className="absolute bottom-6 left-6 z-10 hidden sm:flex items-center gap-3 bg-black/60 backdrop-blur-md border border-white/10 px-4 py-2.5 rounded-lg text-sm font-mono text-muted">
+        <span className="flex items-center gap-1 text-accent">
+          <MapPin size={12} />
+          {slide.location}
+        </span>
+        <span>•</span>
+        <span>{slide.camera}</span>
+      </div>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-6 right-6 z-10 flex items-center gap-2">
+        {HERO_SLIDES.map((_, idx) => (
+          <button
+            key={idx}
+            type="button"
+            onClick={() => setCurrentSlide(idx)}
+            className={`h-1.5 rounded-full transition-all ${
+              currentSlide === idx ? "w-8 bg-accent" : "w-2 bg-white/30"
+            }`}
+            aria-label={`Slide ${idx + 1}`}
+          />
+        ))}
       </div>
     </section>
   );

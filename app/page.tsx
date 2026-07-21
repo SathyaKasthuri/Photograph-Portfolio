@@ -1,5 +1,6 @@
 import Hero from "@/components/home/Hero";
 import FeaturedGallery from "@/components/home/FeaturedGallery";
+import ColorGradeSlider from "@/components/home/ColorGradeSlider";
 import CategoryPreview from "@/components/home/CategoryPreview";
 import ShopPreview from "@/components/home/ShopPreview";
 import Testimonials from "@/components/home/Testimonials";
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <FeaturedGallery />
+      <ColorGradeSlider />
       <CategoryPreview />
       <ShopPreview />
       <Testimonials />

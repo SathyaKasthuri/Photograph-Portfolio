@@ -23,7 +23,7 @@ export default function GalleryGrid({ images, category }: GalleryGridProps) {
 
   return (
     <>
-      <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+      <div className="columns-1 gap-6 sm:columns-2 lg:columns-3 xl:columns-4">
         {images.map((image, index) => (
           <div key={image.id} className="mb-4 break-inside-avoid">
             <GalleryCard

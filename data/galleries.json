@@ -5,35 +5,90 @@
       "src": "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80",
       "alt": "Bride and groom walking through golden hour light",
       "title": "Golden Hour Vows",
-      "featured": true
+      "featured": true,
+      "story": "Captured during sunset in Tuscany. Natural backlighting created an ethereal glow around the couple as they walked hand in hand.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 85mm f/1.4 GM",
+        "aperture": "f/1.4",
+        "shutter": "1/1250s",
+        "iso": "100",
+        "focalLength": "85mm",
+        "location": "Val d'Orcia, Tuscany, Italy",
+        "year": "2025"
+      }
     },
     {
       "id": "wedding-02",
       "src": "https://images.unsplash.com/photo-1465495976277-14efa3ebe1c4?w=1200&q=80",
       "alt": "Wedding ceremony in a sunlit garden",
       "title": "Garden Ceremony",
-      "featured": true
+      "featured": true,
+      "story": "An intimate outdoor ceremony framed by lush olive trees and dappled sunlight.",
+      "exif": {
+        "camera": "Leica M11",
+        "lens": "Summilux-M 35mm f/1.4 ASPH",
+        "aperture": "f/2.0",
+        "shutter": "1/2000s",
+        "iso": "160",
+        "focalLength": "35mm",
+        "location": "Provence, France",
+        "year": "2025"
+      }
     },
     {
       "id": "wedding-03",
       "src": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&q=80",
       "alt": "Close-up of wedding rings on hands",
       "title": "Forever Rings",
-      "featured": false
+      "featured": false,
+      "story": "Macro detail shot capturing the intricate textures of custom platinum bands under warm ambient light.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 90mm f/2.8 Macro G OSS",
+        "aperture": "f/4.0",
+        "shutter": "1/250s",
+        "iso": "400",
+        "focalLength": "90mm",
+        "location": "Kyoto, Japan",
+        "year": "2024"
+      }
     },
     {
       "id": "wedding-04",
       "src": "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&q=80",
       "alt": "Couple dancing at wedding reception",
       "title": "First Dance",
-      "featured": true
+      "featured": true,
+      "story": "Atmospheric reception shot frozen in motion using off-camera flash rim lighting.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 50mm f/1.2 GM",
+        "aperture": "f/1.4",
+        "shutter": "1/320s",
+        "iso": "800",
+        "focalLength": "50mm",
+        "location": "Lake Como, Italy",
+        "year": "2025"
+      }
     },
     {
       "id": "wedding-05",
       "src": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1200&q=80",
       "alt": "Wedding bouquet with soft bokeh",
       "title": "Blooming Love",
-      "featured": false
+      "featured": false,
+      "story": "Soft, dreamy floral arrangement composition bathed in morning window light.",
+      "exif": {
+        "camera": "Leica M11",
+        "lens": "Noctilux-M 50mm f/0.95 ASPH",
+        "aperture": "f/1.2",
+        "shutter": "1/1000s",
+        "iso": "100",
+        "focalLength": "50mm",
+        "location": "Cotswolds, UK",
+        "year": "2024"
+      }
     }
   ],
   "portraits": [
@@ -42,35 +97,90 @@
       "src": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&q=80",
       "alt": "Woman portrait with natural window light",
       "title": "Window Light",
-      "featured": true
+      "featured": true,
+      "story": "Natural directional window light illuminating soft facial contours in an artist's Parisian studio.",
+      "exif": {
+        "camera": "Fujifilm GFX 100 II",
+        "lens": "GF 110mm f/2 R LM WR",
+        "aperture": "f/2.0",
+        "shutter": "1/160s",
+        "iso": "200",
+        "focalLength": "110mm",
+        "location": "Paris, France",
+        "year": "2025"
+      }
     },
     {
       "id": "portrait-02",
       "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80",
       "alt": "Elegant portrait of a woman outdoors",
       "title": "Soft Gaze",
-      "featured": true
+      "featured": true,
+      "story": "Golden hour editorial portrait captured against golden grass textures.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 135mm f/1.8 GM",
+        "aperture": "f/1.8",
+        "shutter": "1/800s",
+        "iso": "100",
+        "focalLength": "135mm",
+        "location": "Highlands, Scotland",
+        "year": "2024"
+      }
     },
     {
       "id": "portrait-03",
       "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80",
       "alt": "Man portrait with warm tones",
       "title": "Quiet Confidence",
-      "featured": false
+      "featured": false,
+      "story": "Environmental portrait highlighting character lines and warm skin tones.",
+      "exif": {
+        "camera": "Leica M11",
+        "lens": "APO-Summicron-M 50mm f/2 ASPH",
+        "aperture": "f/2.8",
+        "shutter": "1/500s",
+        "iso": "200",
+        "focalLength": "50mm",
+        "location": "Berlin, Germany",
+        "year": "2025"
+      }
     },
     {
       "id": "portrait-04",
       "src": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200&q=80",
       "alt": "Portrait with wind in hair",
       "title": "Free Spirit",
-      "featured": true
+      "featured": true,
+      "story": "Spontaneous ocean breeze moment captured along coastal cliffs at dusk.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 50mm f/1.2 GM",
+        "aperture": "f/1.4",
+        "shutter": "1/1600s",
+        "iso": "100",
+        "focalLength": "50mm",
+        "location": "Big Sur, California",
+        "year": "2025"
+      }
     },
     {
       "id": "portrait-05",
       "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200&q=80",
       "alt": "Bright smiling portrait outdoors",
       "title": "Radiant Joy",
-      "featured": false
+      "featured": false,
+      "story": "Candid sunlight portrait filled with genuine emotion and soft bokeh background.",
+      "exif": {
+        "camera": "Fujifilm GFX 100 II",
+        "lens": "GF 80mm f/1.7 R WR",
+        "aperture": "f/1.7",
+        "shutter": "1/1000s",
+        "iso": "100",
+        "focalLength": "80mm",
+        "location": "Barcelona, Spain",
+        "year": "2024"
+      }
     }
   ],
   "events": [
@@ -79,35 +189,90 @@
       "src": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80",
       "alt": "Concert crowd with stage lights",
       "title": "Live Energy",
-      "featured": true
+      "featured": true,
+      "story": "High-octane concert lighting bursting across thousands of fans at an arena show.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 70-200mm f/2.8 GM OSS II",
+        "aperture": "f/2.8",
+        "shutter": "1/500s",
+        "iso": "3200",
+        "focalLength": "120mm",
+        "location": "Amsterdam, Netherlands",
+        "year": "2025"
+      }
     },
     {
       "id": "event-02",
       "src": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&q=80",
       "alt": "Corporate event with speakers on stage",
       "title": "On Stage",
-      "featured": false
+      "featured": false,
+      "story": "Keynote speaker shot capturing dramatic spotlight contrast and audience immersion.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 24-70mm f/2.8 GM II",
+        "aperture": "f/3.2",
+        "shutter": "1/250s",
+        "iso": "1600",
+        "focalLength": "65mm",
+        "location": "Zurich, Switzerland",
+        "year": "2024"
+      }
     },
     {
       "id": "event-03",
       "src": "https://images.unsplash.com/photo-1505236858219-8359eb4e4f2d?w=1200&q=80",
       "alt": "Birthday celebration with confetti",
       "title": "Celebration Night",
-      "featured": true
+      "featured": true,
+      "story": "Gold confetti falling like rain under strobe reflections at an anniversary gala.",
+      "exif": {
+        "camera": "Leica M11",
+        "lens": "Summicron-M 28mm f/2 ASPH",
+        "aperture": "f/2.0",
+        "shutter": "1/400s",
+        "iso": "1600",
+        "focalLength": "28mm",
+        "location": "Monaco",
+        "year": "2025"
+      }
     },
     {
       "id": "event-04",
       "src": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80",
       "alt": "Festival crowd at sunset",
       "title": "Festival Sunset",
-      "featured": false
+      "featured": false,
+      "story": "Silhouettes of festival goers raised in unison as the sun dips below the mainstage horizon.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 16-35mm f/2.8 GM II",
+        "aperture": "f/5.6",
+        "shutter": "1/1000s",
+        "iso": "200",
+        "focalLength": "24mm",
+        "location": "Coachella Valley, USA",
+        "year": "2024"
+      }
     },
     {
       "id": "event-05",
       "src": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80",
       "alt": "DJ performing at a nightclub event",
       "title": "Night Pulse",
-      "featured": true
+      "featured": true,
+      "story": "Laser beams intersecting with DJ turntable deck movements in an underground club.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 35mm f/1.4 GM",
+        "aperture": "f/1.4",
+        "shutter": "1/200s",
+        "iso": "2500",
+        "focalLength": "35mm",
+        "location": "Ibiza, Spain",
+        "year": "2025"
+      }
     }
   ],
   "landscapes": [
@@ -116,35 +281,90 @@
       "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
       "alt": "Snow-capped mountain range at dawn",
       "title": "Alpine Dawn",
-      "featured": true
+      "featured": true,
+      "story": "First pink light touching the jagged glaciers of Mount Cook after camping at 2,500m elevation.",
+      "exif": {
+        "camera": "Fujifilm GFX 100 II",
+        "lens": "GF 23mm f/4 R LM WR",
+        "aperture": "f/8.0",
+        "shutter": "1.5s",
+        "iso": "100",
+        "focalLength": "23mm",
+        "location": "Southern Alps, New Zealand",
+        "year": "2025"
+      }
     },
     {
       "id": "landscape-02",
       "src": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
       "alt": "Misty forest valley in morning light",
       "title": "Misty Valley",
-      "featured": true
+      "featured": true,
+      "story": "Thick fog rolling across pine valley tops like ocean waves as dawn breaks.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 100-400mm f/4.5-5.6 GM OSS",
+        "aperture": "f/7.1",
+        "shutter": "1/60s",
+        "iso": "100",
+        "focalLength": "240mm",
+        "location": "Bavarian Alps, Germany",
+        "year": "2024"
+      }
     },
     {
       "id": "landscape-03",
       "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
       "alt": "Sun rays through mountain peaks",
       "title": "Mountain Light",
-      "featured": false
+      "featured": false,
+      "story": "God rays piercing storm clouds over rugged granite spires.",
+      "exif": {
+        "camera": "Sony α7R V",
+        "lens": "FE 24-70mm f/2.8 GM II",
+        "aperture": "f/11.0",
+        "shutter": "1/250s",
+        "iso": "100",
+        "focalLength": "45mm",
+        "location": "Dolomites, Italy",
+        "year": "2025"
+      }
     },
     {
       "id": "landscape-04",
       "src": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
       "alt": "Lake reflecting mountains at sunset",
       "title": "Mirror Lake",
-      "featured": true
+      "featured": true,
+      "story": "Perfect glassy mirror reflection on Moraine Lake captured during a windless dusk.",
+      "exif": {
+        "camera": "Leica M11",
+        "lens": "Super-Elmar-M 21mm f/3.4 ASPH",
+        "aperture": "f/8.0",
+        "shutter": "2s",
+        "iso": "64",
+        "focalLength": "21mm",
+        "location": "Banff, Alberta, Canada",
+        "year": "2024"
+      }
     },
     {
       "id": "landscape-05",
       "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
       "alt": "Sunlit path through a dense forest",
       "title": "Forest Path",
-      "featured": false
+      "featured": false,
+      "story": "Morning sunbeams cutting through ancient beech tree canopy.",
+      "exif": {
+        "camera": "Fujifilm GFX 100 II",
+        "lens": "GF 45-100mm f/4 R LM OIS WR",
+        "aperture": "f/5.6",
+        "shutter": "1/30s",
+        "iso": "200",
+        "focalLength": "60mm",
+        "location": "Arashiyama, Kyoto, Japan",
+        "year": "2025"
+      }
     }
   ]
 }

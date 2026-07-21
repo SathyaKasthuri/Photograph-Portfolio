@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gear-body-01",
+    "name": "Sony α7R V",
+    "category": "bodies",
+    "spec": "61.0 MP Full-Frame BSI Sensor | 8K Video | AI Autofocus",
+    "description": "My primary flagship camera for editorial portraiture, high-fashion, and large format fine art print capture.",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "favoriteFor": "Fine Art Prints & High Resolution Commercial Shoots"
+  },
+  {
+    "id": "gear-body-02",
+    "name": "Leica M11 Rangefinder",
+    "category": "bodies",
+    "spec": "60 MP Full-Frame BSI Sensor | Rangefinder Focusing",
+    "description": "Pure minimalist tactile photography. Used for intimate wedding storytelling, street documentation, and travel essay work.",
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600&q=80",
+    "favoriteFor": "Documentary Weddings & Reportage"
+  },
+  {
+    "id": "gear-body-03",
+    "name": "Fujifilm GFX 100 II",
+    "category": "bodies",
+    "spec": "102 MP Medium Format Sensor | 16-Bit RAW",
+    "description": "Unrivaled medium format depth and dynamic range for landscape expeditions and architectural commissions.",
+    "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&q=80",
+    "favoriteFor": "Commercial Landscapes & Gallery Exhibition Prints"
+  },
+  {
+    "id": "gear-lens-01",
+    "name": "Sony FE 85mm f/1.4 GM",
+    "category": "lenses",
+    "spec": "85mm Prime | 11-Blade Circular Aperture",
+    "description": "The quintessential portrait lens delivering painterly background separation and razor-sharp eye detail.",
+    "image": "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?w=600&q=80",
+    "favoriteFor": "Intimate Bridal & Celebrity Portraiture"
+  },
+  {
+    "id": "gear-lens-02",
+    "name": "Leica Summilux-M 35mm f/1.4 ASPH",
+    "category": "lenses",
+    "spec": "35mm M-Mount Prime | Manual Focus Precision",
+    "description": "Compact optical perfection. Captures environmental portraits with a signature micro-contrast pop.",
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&q=80",
+    "favoriteFor": "Environmental Portraits & Candid Moments"
+  },
+  {
+    "id": "gear-lens-03",
+    "name": "Sony FE 70-200mm f/2.8 GM OSS II",
+    "category": "lenses",
+    "spec": "70-200mm Telephoto Zoom | Dual XD Linear Motors",
+    "description": "Lightweight telephoto workhorse for ceremony vows, stage performances, and mountain ridge compression.",
+    "image": "https://images.unsplash.com/photo-1512790182412-b19e6d61b39a?w=600&q=80",
+    "favoriteFor": "Stage Events & Distant Ceremony Shots"
+  },
+  {
+    "id": "gear-lighting-01",
+    "name": "Profoto B10X Duo Kit",
+    "category": "lighting",
+    "spec": "250Ws Battery Location Monolights | High-Speed Sync",
+    "description": "Portable studio quality light wherever location takes us, from wind-swept cliffs to dusk receptions.",
+    "image": "https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?w=600&q=80",
+    "favoriteFor": "Sunset Rim Lighting & Location Fashion"
+  },
+  {
+    "id": "gear-drone-01",
+    "name": "DJI Mavic 3 Pro Cine",
+    "category": "drone",
+    "spec": "Tri-Camera System | Hasselblad 4/3 CMOS | Apple ProRes",
+    "description": "Aerial perspective for estate venues, mountain landscapes, and grand outdoor wedding ceremonies.",
+    "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=600&q=80",
+    "favoriteFor": "Destination Venue Aerial Coverage"
+  }
+]

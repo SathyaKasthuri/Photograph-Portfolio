@@ -1,0 +1,66 @@
+[
+  {
+    "id": "service-wedding",
+    "title": "Destination Wedding Storytelling",
+    "category": "Weddings",
+    "startingPrice": 3500,
+    "duration": "Up to 10 Hours Coverage",
+    "description": "Full-day luxury wedding documentation tailored for couples seeking documentary intimacy and editorial elegance.",
+    "deliverables": [
+      "2 Photographers (Lead + Senior Associate)",
+      "High-Res Retouched Digital Gallery (600+ Images)",
+      "Private Online Client Proofing Portal",
+      "Full Print & Reproduction Rights",
+      "Drone Aerial Venue Highlights",
+      "Sneak Peek Preview within 48 Hours"
+    ],
+    "popular": true
+  },
+  {
+    "id": "service-portrait",
+    "title": "Editorial & Artist Portraiture",
+    "category": "Portraits",
+    "startingPrice": 850,
+    "duration": "3 Hours Session",
+    "description": "Bespoke portrait session designed for artists, executives, actors, and personal branding in studio or on location.",
+    "deliverables": [
+      "Up to 3 Outfit Changes",
+      "Studio or Outdoor Location Setup",
+      "30 Master Retouched High-Res Images",
+      "Color Grade & B&W Conversions",
+      "Web & High-Resolution Print Downloads"
+    ],
+    "popular": false
+  },
+  {
+    "id": "service-commercial",
+    "title": "Commercial & Architectural Commissions",
+    "category": "Commercial",
+    "startingPrice": 2200,
+    "duration": "Full Day Commission",
+    "description": "High-impact visual assets for luxury hospitality, architects, fashion labels, and editorial campaigns.",
+    "deliverables": [
+      "Full Commercial Usage Rights",
+      "Advanced Color Grading & Compositing",
+      "High-Resolution TIFF + JPG Master Files",
+      "On-Site Tethered Client Preview",
+      "Fast-Track Turnaround"
+    ],
+    "popular": false
+  },
+  {
+    "id": "service-events",
+    "title": "Gala, Cultural & Stage Events",
+    "category": "Events",
+    "startingPrice": 1500,
+    "duration": "Up to 6 Hours Coverage",
+    "description": "Discreet, high-energy event coverage capturing atmosphere, VIP attendees, performances, and venue details.",
+    "deliverables": [
+      "Comprehensive Event Storyboard",
+      "Same-Day Press Release Highlight Selection",
+      "Full Event Digital Download Rights",
+      "Online Guest Gallery Access"
+    ],
+    "popular": false
+  }
+]
