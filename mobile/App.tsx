@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useEffect, useState } from "react";
+import React, { useRef, useCallback, useState, useEffect } from "react";
 import {
   StyleSheet,
   View,
@@ -10,141 +10,100 @@ import {
 } from "react-native";
 import { WebView, WebViewNavigation } from "react-native-webview";
 import { StatusBar } from "expo-status-bar";
-import * as SplashScreen from "expo-splash-screen";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// CONFIGURATION — update this to your deployed URL
+// Production URL — your live Vercel deployment
 // ─────────────────────────────────────────────────────────────────────────────
 const SITE_URL = "https://lens-and-light-portfolio.vercel.app";
-
-// Prevent splash screen from hiding automatically.
-// Wrapped in try/catch — on some devices this call can throw if the
-// splash screen has already been dismissed by the OS.
-(async () => {
-  try {
-    await SplashScreen.preventAutoHideAsync();
-  } catch {
-    // Safe to ignore — splash will auto-hide if this fails
-  }
-})();
 
 export default function App() {
   const webViewRef = useRef<WebView>(null);
   const [canGoBack, setCanGoBack] = useState(false);
-  const [isAppReady, setIsAppReady] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
-  // Safety timeout: force-hide splash after 10 seconds in case load never fires
-  useEffect(() => {
-    const timer = setTimeout(async () => {
-      try {
-        await SplashScreen.hideAsync();
-      } catch {
-        // already hidden
-      }
-    }, 10000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  const hideSplash = useCallback(async () => {
-    if (!isAppReady) {
-      setIsAppReady(true);
-      try {
-        await SplashScreen.hideAsync();
-      } catch {
-        // already hidden
-      }
-    }
-  }, [isAppReady]);
-
-  // Hide splash screen once the WebView has loaded
-  const onLoadEnd = useCallback(() => {
-    hideSplash();
-  }, [hideSplash]);
-
-  // Track navigation state for back button handling
-  const onNavigationStateChange = useCallback((navState: WebViewNavigation) => {
-    setCanGoBack(navState.canGoBack);
-  }, []);
-
-  // Android hardware back button → navigate back in web history
+  // Android back button: navigate WebView history or exit
   useEffect(() => {
     if (Platform.OS !== "android") return;
-
     const handler = BackHandler.addEventListener("hardwareBackPress", () => {
       if (canGoBack && webViewRef.current) {
         webViewRef.current.goBack();
-        return true; // prevent default (closing app)
+        return true;
       }
-      return false; // let default behaviour close the app
+      return false;
     });
-
     return () => handler.remove();
   }, [canGoBack]);
 
-  // Show a retry screen if WebView completely fails to load
-  if (hasError) {
-    return (
-      <View style={styles.errorContainer}>
-        <StatusBar style="light" backgroundColor="#0a0a0a" />
-        <Text style={styles.errorTitle}>Connection Error</Text>
-        <Text style={styles.errorMessage}>
-          Could not load the app. Please check your internet connection.
-        </Text>
-        <TouchableOpacity
-          style={styles.retryButton}
-          onPress={() => {
-            setHasError(false);
-            setIsAppReady(false);
-          }}
-        >
-          <Text style={styles.retryText}>Retry</Text>
-        </TouchableOpacity>
-      </View>
-    );
-  }
+  const onNavigationStateChange = useCallback(
+    (navState: WebViewNavigation) => {
+      setCanGoBack(navState.canGoBack);
+    },
+    []
+  );
+
+  // Retry button reloads the WebView
+  const handleRetry = useCallback(() => {
+    setHasError(false);
+    setLoading(true);
+    webViewRef.current?.reload();
+  }, []);
 
   return (
     <View style={styles.container}>
       <StatusBar style="light" backgroundColor="#0a0a0a" translucent={false} />
 
+      {/* Loading spinner — shown while WebView loads */}
+      {loading && !hasError && (
+        <View style={styles.loadingOverlay}>
+          <ActivityIndicator size="large" color="#c9a96e" />
+          <Text style={styles.loadingText}>Loading…</Text>
+        </View>
+      )}
+
+      {/* Error screen */}
+      {hasError && (
+        <View style={styles.errorContainer}>
+          <Text style={styles.errorTitle}>Connection Error</Text>
+          <Text style={styles.errorMessage}>
+            Could not load the app.{"\n"}Please check your internet connection.
+          </Text>
+          <TouchableOpacity style={styles.retryButton} onPress={handleRetry}>
+            <Text style={styles.retryText}>Retry</Text>
+          </TouchableOpacity>
+        </View>
+      )}
+
+      {/* WebView — always mounted so it starts loading immediately */}
       <WebView
         ref={webViewRef}
         source={{ uri: SITE_URL }}
-        style={styles.webview}
-        // Page load callbacks
-        onLoadEnd={onLoadEnd}
+        style={[styles.webview, hasError && styles.hidden]}
         onNavigationStateChange={onNavigationStateChange}
-        // Features
-        allowsBackForwardNavigationGestures={true}
-        allowsInlineMediaPlayback={true}
-        mediaPlaybackRequiresUserAction={false}
-        javaScriptEnabled={true}
-        domStorageEnabled={true}
-        allowFileAccess={true}
-        mixedContentMode="compatibility"
-        // Loading indicator while page loads
-        startInLoadingState={true}
-        renderLoading={() => (
-          <View style={styles.loading}>
-            <ActivityIndicator size="large" color="#c9a96e" />
-          </View>
-        )}
-        // Error handlers — hide splash and show retry screen
+        onLoadStart={() => {
+          setLoading(true);
+          setHasError(false);
+        }}
+        onLoad={() => setLoading(false)}
         onError={() => {
-          hideSplash();
+          setLoading(false);
           setHasError(true);
         }}
-        onHttpError={(syntheticEvent) => {
-          const { nativeEvent } = syntheticEvent;
-          // Only show error for serious HTTP failures (5xx)
-          if (nativeEvent.statusCode >= 500) {
-            hideSplash();
+        onHttpError={(e) => {
+          if (e.nativeEvent.statusCode >= 500) {
+            setLoading(false);
             setHasError(true);
           } else {
-            hideSplash();
+            setLoading(false);
           }
         }}
+        javaScriptEnabled={true}
+        domStorageEnabled={true}
+        allowsInlineMediaPlayback={true}
+        mediaPlaybackRequiresUserAction={false}
+        allowFileAccess={true}
+        mixedContentMode="compatibility"
+        startInLoadingState={false}
       />
     </View>
   );
@@ -159,18 +118,30 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#0a0a0a",
   },
-  loading: {
+  hidden: {
+    opacity: 0,
+    height: 0,
+  },
+  loadingOverlay: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: "#0a0a0a",
     alignItems: "center",
     justifyContent: "center",
+    zIndex: 10,
+  },
+  loadingText: {
+    color: "#c9a96e",
+    marginTop: 16,
+    fontSize: 14,
+    letterSpacing: 1,
   },
   errorContainer: {
-    flex: 1,
+    ...StyleSheet.absoluteFillObject,
     backgroundColor: "#0a0a0a",
     alignItems: "center",
     justifyContent: "center",
     padding: 32,
+    zIndex: 10,
   },
   errorTitle: {
     color: "#ffffff",
