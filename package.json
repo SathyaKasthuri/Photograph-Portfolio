@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "icons:generate": "node scripts/generate-icons.mjs",
-    "mobile": "cd mobile && expo start",
-    "mobile:android": "cd mobile && expo start --android",
+    "mobile": "cd mobile && npx expo start",
+    "mobile:android": "cd mobile && npx expo start --android",
     "mobile:build": "cd mobile && eas build --profile preview --platform android"
   },
   "dependencies": {

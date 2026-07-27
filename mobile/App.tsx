@@ -14,7 +14,7 @@ import { StatusBar } from "expo-status-bar";
 // ─────────────────────────────────────────────────────────────────────────────
 // Production URL — your live Vercel deployment
 // ─────────────────────────────────────────────────────────────────────────────
-const SITE_URL = "http://192.168.1.8:3000";
+const SITE_URL = "http://192.168.1.6:3000";
 
 export default function App() {
   const webViewRef = useRef<WebView>(null);
