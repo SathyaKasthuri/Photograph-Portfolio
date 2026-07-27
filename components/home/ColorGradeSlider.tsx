@@ -2,7 +2,6 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { SlidersHorizontal, Sparkles } from "lucide-react";
 
 export default function ColorGradeSlider() {
@@ -76,14 +75,15 @@ export default function ColorGradeSlider() {
             className="absolute inset-0 overflow-hidden"
             style={{ width: `${sliderPosition}%` }}
           >
-            <Image
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=40&sat=-40&con=-20"
-              alt="Flat unedited camera RAW file"
-              fill
-              className="object-cover max-w-none"
-              style={{ width: containerRef.current ? `${containerRef.current.clientWidth}px` : "100%" }}
-              sizes="100vw"
-            />
+            <div className="absolute inset-0" style={{ width: "100vw" }}>
+              <Image
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=40&sat=-40&con=-20"
+                alt="Flat unedited camera RAW file"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
             <div className="absolute top-4 left-4 bg-card/80 backdrop-blur-md px-3.5 py-2 rounded text-sm font-medium uppercase tracking-widest text-muted border border-border shadow-lg">
               Unedited Camera RAW
             </div>

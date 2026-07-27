@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Calculator, Check, Sparkles, ArrowRight } from "lucide-react";
 import servicesData from "@/data/services.json";
 import type { ServicePackage } from "@/lib/types";
+import { formatPrice } from "@/lib/utils";
 
 export default function InvestmentCalculator() {
   const packages = servicesData as ServicePackage[];
@@ -16,10 +17,10 @@ export default function InvestmentCalculator() {
 
   // Price calculations
   const basePrice = selectedPackage.startingPrice;
-  const extraHoursCost = extraHours * 250;
-  const secondShooterCost = hasSecondShooter ? 500 : 0;
-  const albumCost = hasHeirloomAlbum ? 750 : 0;
-  const rawCost = hasRawFiles ? 400 : 0;
+  const extraHoursCost = extraHours * 15000;
+  const secondShooterCost = hasSecondShooter ? 35000 : 0;
+  const albumCost = hasHeirloomAlbum ? 50000 : 0;
+  const rawCost = hasRawFiles ? 25000 : 0;
   const totalCost = basePrice + extraHoursCost + secondShooterCost + albumCost + rawCost;
 
   return (
@@ -59,7 +60,7 @@ export default function InvestmentCalculator() {
                     }`}
                   >
                     <div className="font-serif text-lg font-medium text-foreground">{pkg.title}</div>
-                    <div className="text-sm text-accent mt-1 font-mono">${pkg.startingPrice.toLocaleString()} base</div>
+                    <div className="text-sm text-accent mt-1 font-mono">{formatPrice(pkg.startingPrice)} base</div>
                   </button>
                 ))}
               </div>
@@ -68,7 +69,7 @@ export default function InvestmentCalculator() {
             {/* Extra Hours Slider */}
             <div>
               <div className="flex items-center justify-between text-sm font-semibold uppercase tracking-wider mb-2">
-                <span className="text-accent">2. Additional Hours (+ $250 / hr)</span>
+                <span className="text-accent">2. Additional Hours (+ {formatPrice(15000)} / hr)</span>
                 <span className="font-mono text-foreground">{extraHours} Extra Hours</span>
               </div>
               <input
@@ -100,7 +101,7 @@ export default function InvestmentCalculator() {
                     <div className="text-xs text-muted">Ensures dual angle ceremony and reaction coverage</div>
                   </div>
                 </div>
-                <span className="text-sm font-mono text-accent font-semibold">+$500</span>
+                <span className="text-sm font-mono text-accent font-semibold">+{formatPrice(35000)}</span>
               </label>
 
               <label className="flex items-center justify-between p-4 rounded-xl border border-border bg-background cursor-pointer hover:border-accent/50 transition-colors">
@@ -116,7 +117,7 @@ export default function InvestmentCalculator() {
                     <div className="text-xs text-muted">30-page flush-mount leather or velvet photo album</div>
                   </div>
                 </div>
-                <span className="text-sm font-mono text-accent font-semibold">+$750</span>
+                <span className="text-sm font-mono text-accent font-semibold">+{formatPrice(50000)}</span>
               </label>
 
               <label className="flex items-center justify-between p-4 rounded-xl border border-border bg-background cursor-pointer hover:border-accent/50 transition-colors">
@@ -132,7 +133,7 @@ export default function InvestmentCalculator() {
                     <div className="text-xs text-muted">Full unedited 61MP RAW file archive export</div>
                   </div>
                 </div>
-                <span className="text-sm font-mono text-accent font-semibold">+$400</span>
+                <span className="text-sm font-mono text-accent font-semibold">+{formatPrice(25000)}</span>
               </label>
             </div>
           </div>
@@ -153,30 +154,30 @@ export default function InvestmentCalculator() {
               <div className="space-y-3 text-sm border-b border-border/80 pb-6 mb-6">
                 <div className="flex justify-between">
                   <span className="text-muted">Base Package:</span>
-                  <span className="font-mono text-foreground font-semibold">${basePrice.toLocaleString()}</span>
+                  <span className="font-mono text-foreground font-semibold">{formatPrice(basePrice)}</span>
                 </div>
                 {extraHours > 0 && (
                   <div className="flex justify-between">
-                    <span className="text-muted">Extra Hours ({extraHours}):</span>
-                    <span className="font-mono text-foreground">+${extraHoursCost}</span>
+                     <span className="text-muted">Extra Hours ({extraHours}):</span>
+                     <span className="font-mono text-foreground">+{formatPrice(extraHoursCost)}</span>
                   </div>
                 )}
                 {hasSecondShooter && (
                   <div className="flex justify-between">
                     <span className="text-muted">Second Photographer:</span>
-                    <span className="font-mono text-foreground">+$500</span>
+                    <span className="font-mono text-foreground">+{formatPrice(35000)}</span>
                   </div>
                 )}
                 {hasHeirloomAlbum && (
                   <div className="flex justify-between">
                     <span className="text-muted">Heirloom Album:</span>
-                    <span className="font-mono text-foreground">+$750</span>
+                    <span className="font-mono text-foreground">+{formatPrice(50000)}</span>
                   </div>
                 )}
                 {hasRawFiles && (
                   <div className="flex justify-between">
                     <span className="text-muted">RAW Camera Archive:</span>
-                    <span className="font-mono text-foreground">+$400</span>
+                    <span className="font-mono text-foreground">+{formatPrice(25000)}</span>
                   </div>
                 )}
               </div>
@@ -196,7 +197,7 @@ export default function InvestmentCalculator() {
               <div className="flex items-end justify-between mb-6 pt-4 border-t border-border">
                 <span className="text-base font-semibold uppercase tracking-wider text-muted">Total Quote</span>
                 <span className="font-serif text-4xl font-light text-accent font-mono">
-                  ${totalCost.toLocaleString()}
+                  {formatPrice(totalCost)}
                 </span>
               </div>
 

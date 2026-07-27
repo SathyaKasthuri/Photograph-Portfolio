@@ -2,7 +2,6 @@
   "expo": {
     "name": "Lens & Light",
     "slug": "photographer-portfolio",
-    "owner": "sathvik1352",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +18,10 @@
     },
     "android": {
       "package": "com.lensandlight.portfolio",
-      "permissions": ["android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE"],
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#0a0a0a"
@@ -28,11 +30,22 @@
     "web": {
       "favicon": "./assets/icon.png"
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-asset"
+    ],
     "extra": {
       "eas": {
-        "projectId": "4a738f13-fca1-4dc7-8390-1ea455c22fb6"
+        "projectId": "8402b625-411b-46b0-85c8-16705fb08b4d"
       }
-    }
+    },
+    "owner": "deepan.agassi"
   }
 }

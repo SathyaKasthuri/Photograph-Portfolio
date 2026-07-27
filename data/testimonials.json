@@ -1,32 +1,32 @@
 [
   {
     "id": "testimonial-01",
-    "name": "Sarah & James",
-    "event": "Wedding",
-    "quote": "Every photo tells the story of our day perfectly. We couldn't have asked for a more talented and thoughtful photographer."
+    "name": "Aishwarya & Rohan",
+    "event": "Destination Wedding (Udaipur)",
+    "quote": "Sathya and his team captured the grandeur and deep emotions of our three-day Udaipur wedding. Every single photo is like a painting. Outstanding work!"
   },
   {
     "id": "testimonial-02",
-    "name": "Elena Rodriguez",
-    "event": "Portrait Session",
-    "quote": "I felt completely at ease during the shoot. The portraits captured a side of me I had never seen before — authentic and beautiful."
+    "name": "Kunal Kapoor",
+    "event": "Editorial Portrait (Jaisalmer)",
+    "quote": "As an artist, I wanted portraits that felt soulful and cinematic. The session in Jaisalmer was comfortable, and the images are exactly what I wanted for my portfolio."
   },
   {
     "id": "testimonial-03",
-    "name": "Marcus Chen",
-    "event": "Corporate Event",
-    "quote": "Professional, unobtrusive, and incredibly fast with turnaround. Our team loved the event coverage."
+    "name": "Dr. Meera Iyer",
+    "event": "Corporate Branding (Bangalore)",
+    "quote": "Professional, efficient, and very quick with the deliverables. The executive portraits for our Bangalore tech team were top-notch. Highly recommended."
   },
   {
     "id": "testimonial-04",
-    "name": "Priya & Arjun",
-    "event": "Wedding",
-    "quote": "From the first consultation to the final gallery, the experience was seamless. The candid moments are our favorites."
+    "name": "Ananya & Sidharth",
+    "event": "Traditional Wedding (Kerala)",
+    "quote": "From our pre-wedding shoot in Munnar to the main ceremony, the candid frames captured by Sathya are absolute treasures. The colors are so vibrant and real."
   },
   {
     "id": "testimonial-05",
-    "name": "David Okonkwo",
-    "event": "Music Festival",
-    "quote": "Captured the energy of our festival like no one else. Every shot feels alive. We'll be booking again next year."
+    "name": "Vikram Sen",
+    "event": "Cultural Festival Gala (Goa)",
+    "quote": "Captured the true spirit and energy of our music festival in Goa. The night shots are spectacular, freezing the vibe of the crowd beautifully."
   }
 ]

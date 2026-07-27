@@ -5,9 +5,9 @@ import GearBag from "@/components/about/GearBag";
 import CTABanner from "@/components/ui/CTABanner";
 
 export const metadata: Metadata = {
-  title: "About | Julian Vance Photography",
+  title: "About | Sathya Kasthuri Photography",
   description:
-    "Learn about Julian Vance — fine art, portrait, and destination wedding photographer based in Paris & worldwide.",
+    "Learn about Sathya Kasthuri — fine art, portrait, and destination wedding photographer based in Bangalore & worldwide.",
 };
 
 const approach = [
@@ -19,7 +19,7 @@ const approach = [
   {
     title: "Mastery of Natural Light",
     description:
-      "Light is my brush. From golden hour glow on Tuscan hills to directional window light in Parisian studios, light defines tone.",
+      "Light is my brush. From golden hour glow on the tea gardens of Munnar to the golden sands of Rajasthan, light defines tone.",
   },
   {
     title: "Unobtrusive Presence",
@@ -31,7 +31,7 @@ const approach = [
 const stats = [
   { value: "10+", label: "Years Experience" },
   { value: "350+", label: "Commissions Delivered" },
-  { value: "18", label: "Countries Traveled" },
+  { value: "22+", label: "States & Countries" },
 ];
 
 export default function AboutPage() {
@@ -44,7 +44,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg shadow-2xl border border-border">
                 <Image
                   src="https://images.unsplash.com/photo-1554048612-b6a482b22f6e?w=800&q=80"
-                  alt="Julian Vance Photographer"
+                  alt="Sathya Kasthuri Photographer"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -56,17 +56,17 @@ export default function AboutPage() {
             <FadeIn delay={0.15}>
               <div>
                 <p className="text-xs uppercase tracking-[0.3em] text-accent font-semibold">Artist & Founder</p>
-                <h1 className="mt-2 font-serif text-4xl md:text-6xl font-light">Julian Vance</h1>
-                <p className="mt-2 text-xs uppercase tracking-widest text-accent font-mono">Paris • Tokyo • New York</p>
+                <h1 className="mt-2 font-serif text-4xl md:text-6xl font-light">Sathya Kasthuri</h1>
+                <p className="mt-2 text-xs uppercase tracking-widest text-accent font-mono">Bangalore • Udaipur • Goa</p>
                 <div className="mt-6 space-y-4 text-foreground/80 leading-relaxed text-sm md:text-base">
                   <p>
-                    I am an editorial, portrait, and destination wedding photographer driven by a obsession for filmic light, rich color depth, and emotional honesty.
+                    I am an editorial, portrait, and destination wedding photographer driven by an obsession for filmic light, rich color depth, and emotional honesty.
                   </p>
                   <p>
-                    What began with a vintage rangefinder passed down by my grandfather has evolved into a decade-long journey documenting high-fashion editorials, luxury celebrations, and fine art landscapes across 18 countries.
+                    What began with a vintage rangefinder passed down by my grandfather has evolved into a decade-long journey documenting heritage Indian weddings, luxury celebrations, and fine art landscapes across the country and globally.
                   </p>
                   <p>
-                    My philosophy is rooted in understated luxury and timeless aesthetic clarity. Whether photographing a quiet moment on the Amalfi Coast or a grand celebration in Lake Como, my commitment remains identical: creating images that transcend trends.
+                    My philosophy is rooted in understated luxury and timeless aesthetic clarity. Whether photographing a quiet moment in Varanasi or a grand destination celebration in Udaipur, my commitment remains identical: creating images that transcend trends.
                   </p>
                 </div>
               </div>

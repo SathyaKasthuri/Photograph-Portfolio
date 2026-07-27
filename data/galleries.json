@@ -2,11 +2,11 @@
   "weddings": [
     {
       "id": "wedding-01",
-      "src": "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80",
-      "alt": "Bride and groom walking through golden hour light",
-      "title": "Golden Hour Vows",
+      "src": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1200&q=80",
+      "alt": "Indian bride and groom walking together at sunset",
+      "title": "Royal Jodhpur Vows",
       "featured": true,
-      "story": "Captured during sunset in Tuscany. Natural backlighting created an ethereal glow around the couple as they walked hand in hand.",
+      "story": "Captured during sunset at a heritage palace in Jodhpur. The backlighting created an ethereal glow around the couple during their pheras.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 85mm f/1.4 GM",
@@ -14,17 +14,17 @@
         "shutter": "1/1250s",
         "iso": "100",
         "focalLength": "85mm",
-        "location": "Val d'Orcia, Tuscany, Italy",
+        "location": "Jodhpur, Rajasthan, India",
         "year": "2025"
       }
     },
     {
       "id": "wedding-02",
-      "src": "https://images.unsplash.com/photo-1465495976277-14efa3ebe1c4?w=1200&q=80",
-      "alt": "Wedding ceremony in a sunlit garden",
-      "title": "Garden Ceremony",
+      "src": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1200&q=80",
+      "alt": "Portrait of an Indian bride in traditional lehenga",
+      "title": "The Royal Bride",
       "featured": true,
-      "story": "An intimate outdoor ceremony framed by lush olive trees and dappled sunlight.",
+      "story": "A quiet, candid moment highlighting the intricate detailing of the traditional bridal attire in Udaipur.",
       "exif": {
         "camera": "Leica M11",
         "lens": "Summilux-M 35mm f/1.4 ASPH",
@@ -32,17 +32,17 @@
         "shutter": "1/2000s",
         "iso": "160",
         "focalLength": "35mm",
-        "location": "Provence, France",
+        "location": "Udaipur, Rajasthan, India",
         "year": "2025"
       }
     },
     {
       "id": "wedding-03",
-      "src": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&q=80",
-      "alt": "Close-up of wedding rings on hands",
-      "title": "Forever Rings",
+      "src": "https://images.unsplash.com/photo-1610030469668-93535c17b6b3?w=1200&q=80",
+      "alt": "Close-up of intricate mehndi henna on bridal hands",
+      "title": "Bridal Mehndi Detail",
       "featured": false,
-      "story": "Macro detail shot capturing the intricate textures of custom platinum bands under warm ambient light.",
+      "story": "Macro detail shot capturing the fine lines and natural textures of traditional henna designs under warm lighting.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 90mm f/2.8 Macro G OSS",
@@ -50,17 +50,17 @@
         "shutter": "1/250s",
         "iso": "400",
         "focalLength": "90mm",
-        "location": "Kyoto, Japan",
+        "location": "Delhi, India",
         "year": "2024"
       }
     },
     {
       "id": "wedding-04",
-      "src": "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&q=80",
-      "alt": "Couple dancing at wedding reception",
-      "title": "First Dance",
+      "src": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?w=1200&q=80",
+      "alt": "Groom covered in yellow haldi paste smiling",
+      "title": "Celebratory Haldi",
       "featured": true,
-      "story": "Atmospheric reception shot frozen in motion using off-camera flash rim lighting.",
+      "story": "An energetic, candid shot capturing the laughter and flying yellow colors of a traditional haldi ceremony in Goa.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 50mm f/1.2 GM",
@@ -68,17 +68,17 @@
         "shutter": "1/320s",
         "iso": "800",
         "focalLength": "50mm",
-        "location": "Lake Como, Italy",
+        "location": "Goa, India",
         "year": "2025"
       }
     },
     {
       "id": "wedding-05",
-      "src": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1200&q=80",
-      "alt": "Wedding bouquet with soft bokeh",
-      "title": "Blooming Love",
+      "src": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1200&q=80",
+      "alt": "Bride performing on stage at wedding sangeet",
+      "title": "Vibrant Sangeet Dance",
       "featured": false,
-      "story": "Soft, dreamy floral arrangement composition bathed in morning window light.",
+      "story": "Atmospheric capture of the bride dancing with stage lighting highlighting dynamic movements and details.",
       "exif": {
         "camera": "Leica M11",
         "lens": "Noctilux-M 50mm f/0.95 ASPH",
@@ -86,7 +86,7 @@
         "shutter": "1/1000s",
         "iso": "100",
         "focalLength": "50mm",
-        "location": "Cotswolds, UK",
+        "location": "Mumbai, India",
         "year": "2024"
       }
     }
@@ -94,11 +94,11 @@
   "portraits": [
     {
       "id": "portrait-01",
-      "src": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&q=80",
-      "alt": "Woman portrait with natural window light",
-      "title": "Window Light",
+      "src": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80",
+      "alt": "Portrait of an Indian professional in corporate setting",
+      "title": "Quiet Reflection",
       "featured": true,
-      "story": "Natural directional window light illuminating soft facial contours in an artist's Parisian studio.",
+      "story": "Natural directional light illuminating a calm and professional study in a corporate workspace in Bangalore.",
       "exif": {
         "camera": "Fujifilm GFX 100 II",
         "lens": "GF 110mm f/2 R LM WR",
@@ -106,17 +106,17 @@
         "shutter": "1/160s",
         "iso": "200",
         "focalLength": "110mm",
-        "location": "Paris, France",
+        "location": "Bangalore, India",
         "year": "2025"
       }
     },
     {
       "id": "portrait-02",
-      "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80",
-      "alt": "Elegant portrait of a woman outdoors",
-      "title": "Soft Gaze",
+      "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&q=80",
+      "alt": "Indian classical dancer looking away",
+      "title": "Classical Dancer Study",
       "featured": true,
-      "story": "Golden hour editorial portrait captured against golden grass textures.",
+      "story": "An editorial portrait capturing the poise, expression, and traditional jewelry of a Bharatanatyam dancer in Chennai.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 135mm f/1.8 GM",
@@ -124,17 +124,17 @@
         "shutter": "1/800s",
         "iso": "100",
         "focalLength": "135mm",
-        "location": "Highlands, Scotland",
+        "location": "Chennai, India",
         "year": "2024"
       }
     },
     {
       "id": "portrait-03",
-      "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80",
-      "alt": "Man portrait with warm tones",
-      "title": "Quiet Confidence",
+      "src": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80",
+      "alt": "Portrait of a senior Indian painter",
+      "title": "Artist in Studio",
       "featured": false,
-      "story": "Environmental portrait highlighting character lines and warm skin tones.",
+      "story": "Environmental portrait highlighting character lines and soft shadows in a studio in Kolkata.",
       "exif": {
         "camera": "Leica M11",
         "lens": "APO-Summicron-M 50mm f/2 ASPH",
@@ -142,17 +142,17 @@
         "shutter": "1/500s",
         "iso": "200",
         "focalLength": "50mm",
-        "location": "Berlin, Germany",
+        "location": "Kolkata, India",
         "year": "2025"
       }
     },
     {
       "id": "portrait-04",
-      "src": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200&q=80",
-      "alt": "Portrait with wind in hair",
-      "title": "Free Spirit",
+      "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200&q=80",
+      "alt": "Young Indian woman smiling outdoors",
+      "title": "Modern Corporate Portrait",
       "featured": true,
-      "story": "Spontaneous ocean breeze moment captured along coastal cliffs at dusk.",
+      "story": "Candid sunlight portrait filled with genuine emotion and a soft bokeh background in Mumbai.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 50mm f/1.2 GM",
@@ -160,17 +160,17 @@
         "shutter": "1/1600s",
         "iso": "100",
         "focalLength": "50mm",
-        "location": "Big Sur, California",
+        "location": "Mumbai, India",
         "year": "2025"
       }
     },
     {
       "id": "portrait-05",
-      "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200&q=80",
-      "alt": "Bright smiling portrait outdoors",
-      "title": "Radiant Joy",
+      "src": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
+      "alt": "Portrait of a local boatman in Varanasi",
+      "title": "Street Portraiture",
       "featured": false,
-      "story": "Candid sunlight portrait filled with genuine emotion and soft bokeh background.",
+      "story": "A striking character portrait of a boatman on the Ganges River, capturing lifetime narratives in a single gaze.",
       "exif": {
         "camera": "Fujifilm GFX 100 II",
         "lens": "GF 80mm f/1.7 R WR",
@@ -178,7 +178,7 @@
         "shutter": "1/1000s",
         "iso": "100",
         "focalLength": "80mm",
-        "location": "Barcelona, Spain",
+        "location": "Varanasi, India",
         "year": "2024"
       }
     }
@@ -186,11 +186,11 @@
   "events": [
     {
       "id": "event-01",
-      "src": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80",
-      "alt": "Concert crowd with stage lights",
-      "title": "Live Energy",
+      "src": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80",
+      "alt": "Huge music concert crowd with lights",
+      "title": "NH7 Weekender Crowd",
       "featured": true,
-      "story": "High-octane concert lighting bursting across thousands of fans at an arena show.",
+      "story": "High-octane concert lighting bursting across thousands of music fans at the NH7 Weekender in Pune.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 70-200mm f/2.8 GM OSS II",
@@ -198,17 +198,17 @@
         "shutter": "1/500s",
         "iso": "3200",
         "focalLength": "120mm",
-        "location": "Amsterdam, Netherlands",
+        "location": "Pune, India",
         "year": "2025"
       }
     },
     {
       "id": "event-02",
-      "src": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&q=80",
-      "alt": "Corporate event with speakers on stage",
-      "title": "On Stage",
-      "featured": false,
-      "story": "Keynote speaker shot capturing dramatic spotlight contrast and audience immersion.",
+      "src": "https://images.unsplash.com/photo-1505236858219-8359eb4e4f2d?w=1200&q=80",
+      "alt": "Lit lanterns floating during Diwali celebration",
+      "title": "Diwali Gala Reflections",
+      "featured": true,
+      "story": "Scenic twilight shot capturing golden light paths from oil lamps and lights in Delhi.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 24-70mm f/2.8 GM II",
@@ -216,17 +216,17 @@
         "shutter": "1/250s",
         "iso": "1600",
         "focalLength": "65mm",
-        "location": "Zurich, Switzerland",
+        "location": "Delhi, India",
         "year": "2024"
       }
     },
     {
       "id": "event-03",
-      "src": "https://images.unsplash.com/photo-1505236858219-8359eb4e4f2d?w=1200&q=80",
-      "alt": "Birthday celebration with confetti",
-      "title": "Celebration Night",
-      "featured": true,
-      "story": "Gold confetti falling like rain under strobe reflections at an anniversary gala.",
+      "src": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80",
+      "alt": "Audience watching speaker at Bangalore Tech Summit",
+      "title": "Tech Summit Keynote",
+      "featured": false,
+      "story": "Keynote speaker shot capturing dramatic spotlight contrast and audience immersion at a tech summit.",
       "exif": {
         "camera": "Leica M11",
         "lens": "Summicron-M 28mm f/2 ASPH",
@@ -234,17 +234,17 @@
         "shutter": "1/400s",
         "iso": "1600",
         "focalLength": "28mm",
-        "location": "Monaco",
+        "location": "Bangalore, India",
         "year": "2025"
       }
     },
     {
       "id": "event-04",
-      "src": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80",
-      "alt": "Festival crowd at sunset",
-      "title": "Festival Sunset",
+      "src": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80",
+      "alt": "Sufi singer performing at a cultural festival",
+      "title": "Sufi Music Night",
       "featured": false,
-      "story": "Silhouettes of festival goers raised in unison as the sun dips below the mainstage horizon.",
+      "story": "Silhouettes and deep shadows of musicians performing classic Sufi melodies in Rajasthan.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 16-35mm f/2.8 GM II",
@@ -252,17 +252,17 @@
         "shutter": "1/1000s",
         "iso": "200",
         "focalLength": "24mm",
-        "location": "Coachella Valley, USA",
+        "location": "Rajasthan, India",
         "year": "2024"
       }
     },
     {
       "id": "event-05",
-      "src": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80",
-      "alt": "DJ performing at a nightclub event",
-      "title": "Night Pulse",
+      "src": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&q=80",
+      "alt": "Decorated luxury venue for a product launch",
+      "title": "Luxury Product Launch",
       "featured": true,
-      "story": "Laser beams intersecting with DJ turntable deck movements in an underground club.",
+      "story": "Rich lighting intersections and setup designs captured at a premium automotive launch event in Mumbai.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 35mm f/1.4 GM",
@@ -270,7 +270,7 @@
         "shutter": "1/200s",
         "iso": "2500",
         "focalLength": "35mm",
-        "location": "Ibiza, Spain",
+        "location": "Mumbai, India",
         "year": "2025"
       }
     }
@@ -278,11 +278,11 @@
   "landscapes": [
     {
       "id": "landscape-01",
-      "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-      "alt": "Snow-capped mountain range at dawn",
-      "title": "Alpine Dawn",
+      "src": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200&q=80",
+      "alt": "Taj Mahal bathing in soft morning sunlight",
+      "title": "Taj Mahal Sunrise",
       "featured": true,
-      "story": "First pink light touching the jagged glaciers of Mount Cook after camping at 2,500m elevation.",
+      "story": "First pink light touching the marble domes of the iconic Taj Mahal, captured from the banks of Yamuna River.",
       "exif": {
         "camera": "Fujifilm GFX 100 II",
         "lens": "GF 23mm f/4 R LM WR",
@@ -290,17 +290,17 @@
         "shutter": "1.5s",
         "iso": "100",
         "focalLength": "23mm",
-        "location": "Southern Alps, New Zealand",
+        "location": "Agra, Uttar Pradesh, India",
         "year": "2025"
       }
     },
     {
       "id": "landscape-02",
-      "src": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
-      "alt": "Misty forest valley in morning light",
-      "title": "Misty Valley",
+      "src": "https://images.unsplash.com/photo-1561361060-6198901f215f?w=1200&q=80",
+      "alt": "Ganges river boats and bathers in Varanasi at dawn",
+      "title": "Varanasi Ghats Morning",
       "featured": true,
-      "story": "Thick fog rolling across pine valley tops like ocean waves as dawn breaks.",
+      "story": "Thick morning fog rolling across the Ganges as boatmen start their day on Varanasi's ancient ghats.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 100-400mm f/4.5-5.6 GM OSS",
@@ -308,17 +308,17 @@
         "shutter": "1/60s",
         "iso": "100",
         "focalLength": "240mm",
-        "location": "Bavarian Alps, Germany",
+        "location": "Varanasi, India",
         "year": "2024"
       }
     },
     {
       "id": "landscape-03",
-      "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
-      "alt": "Sun rays through mountain peaks",
-      "title": "Mountain Light",
+      "src": "https://images.unsplash.com/photo-1590050752117-238cb0612b1b?w=1200&q=80",
+      "alt": "Desert dunes in Jaisalmer under sunrays",
+      "title": "The Jaisalmer Dunes",
       "featured": false,
-      "story": "God rays piercing storm clouds over rugged granite spires.",
+      "story": "Sun rays piercing through storm clouds over the golden sand ripples of the Thar Desert.",
       "exif": {
         "camera": "Sony α7R V",
         "lens": "FE 24-70mm f/2.8 GM II",
@@ -326,17 +326,17 @@
         "shutter": "1/250s",
         "iso": "100",
         "focalLength": "45mm",
-        "location": "Dolomites, Italy",
+        "location": "Jaisalmer, Rajasthan, India",
         "year": "2025"
       }
     },
     {
       "id": "landscape-04",
-      "src": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
-      "alt": "Lake reflecting mountains at sunset",
-      "title": "Mirror Lake",
+      "src": "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=1200&q=80",
+      "alt": "Vast turquoise lake reflecting mountains in Ladakh",
+      "title": "Pangong Tso Silence",
       "featured": true,
-      "story": "Perfect glassy mirror reflection on Moraine Lake captured during a windless dusk.",
+      "story": "Perfect glassy reflections on Pangong Tso captured during a serene, windless dusk in high-altitude Ladakh.",
       "exif": {
         "camera": "Leica M11",
         "lens": "Super-Elmar-M 21mm f/3.4 ASPH",
@@ -344,17 +344,17 @@
         "shutter": "2s",
         "iso": "64",
         "focalLength": "21mm",
-        "location": "Banff, Alberta, Canada",
+        "location": "Ladakh, India",
         "year": "2024"
       }
     },
     {
       "id": "landscape-05",
-      "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-      "alt": "Sunlit path through a dense forest",
-      "title": "Forest Path",
+      "src": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=1200&q=80",
+      "alt": "Misty tea garden paths in Munnar, Kerala",
+      "title": "Tea Gardens of Munnar",
       "featured": false,
-      "story": "Morning sunbeams cutting through ancient beech tree canopy.",
+      "story": "Morning sunbeams cutting through the mist over the sprawling, lush green tea hills of Munnar.",
       "exif": {
         "camera": "Fujifilm GFX 100 II",
         "lens": "GF 45-100mm f/4 R LM OIS WR",
@@ -362,7 +362,7 @@
         "shutter": "1/30s",
         "iso": "200",
         "focalLength": "60mm",
-        "location": "Arashiyama, Kyoto, Japan",
+        "location": "Munnar, Kerala, India",
         "year": "2025"
       }
     }

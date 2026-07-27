@@ -1,10 +1,10 @@
 [
   {
-    "id": "alpine-dawn-print",
-    "slug": "alpine-dawn-print",
-    "title": "Alpine Dawn",
-    "description": "A breathtaking mountain sunrise captured at dawn. Museum-quality fine art print on archival matte paper.",
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "id": "taj-mahal-sunrise-print",
+    "slug": "taj-mahal-sunrise-print",
+    "title": "Taj Mahal Sunrise",
+    "description": "The iconic Taj Mahal bathing in the soft golden hues of a winter sunrise. Museum-quality fine art print on archival matte paper.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80",
     "category": "landscapes",
     "featured": true,
     "variants": [
@@ -14,12 +14,12 @@
     ]
   },
   {
-    "id": "golden-hour-vows-print",
-    "slug": "golden-hour-vows-print",
-    "title": "Golden Hour Vows",
-    "description": "A romantic wedding moment bathed in golden light. Perfect for celebrating your special day on the wall.",
-    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
-    "category": "weddings",
+    "id": "varanasi-ghats-morning-print",
+    "slug": "varanasi-ghats-morning-print",
+    "title": "Varanasi Ghats Morning",
+    "description": "A cinematic capture of morning rituals and rowboats on the holy Ganges river in Varanasi. Perfect for bringing spiritual calm to your wall.",
+    "image": "https://images.unsplash.com/photo-1561361060-6198901f215f?w=800&q=80",
+    "category": "fine-art",
     "featured": true,
     "variants": [
       { "id": "8x10", "label": "8×10 Print", "price": 2499 },
@@ -28,11 +28,11 @@
     ]
   },
   {
-    "id": "window-light-print",
-    "slug": "window-light-print",
-    "title": "Window Light",
-    "description": "An intimate portrait study in natural window light. Soft, timeless, and beautifully composed.",
-    "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+    "id": "the-royal-courtyard-print",
+    "slug": "the-royal-courtyard-print",
+    "title": "The Royal Courtyard",
+    "description": "Symmetrical beauty of traditional architecture and shadows in a Jaipur palace courtyard. Soft, timeless, and beautifully composed.",
+    "image": "https://images.unsplash.com/photo-1477584322813-4b625579930c?w=800&q=80",
     "category": "portraits",
     "featured": true,
     "variants": [
@@ -42,11 +42,11 @@
     ]
   },
   {
-    "id": "misty-valley-print",
-    "slug": "misty-valley-print",
-    "title": "Misty Valley",
-    "description": "Morning fog rolling through a forest valley. A serene landscape for any living space.",
-    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80",
+    "id": "misty-western-ghats-print",
+    "slug": "misty-western-ghats-print",
+    "title": "Misty Western Ghats",
+    "description": "Morning mist gently rolling over the lush tea plantations of Munnar, Kerala. A serene landscape for any living space.",
+    "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800&q=80",
     "category": "landscapes",
     "featured": false,
     "variants": [
@@ -56,12 +56,12 @@
     ]
   },
   {
-    "id": "live-energy-print",
-    "slug": "live-energy-print",
-    "title": "Live Energy",
-    "description": "The electric atmosphere of a live concert captured in a single frame. Bold and dynamic.",
-    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
-    "category": "events",
+    "id": "ladakh-horizon-print",
+    "slug": "ladakh-horizon-print",
+    "title": "Ladakh Horizon",
+    "description": "Deep turquoise waters of Pangong Tso set against the rugged trans-Himalayan mountain range. Bold, majestic, and dynamic.",
+    "image": "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=800&q=80",
+    "category": "landscapes",
     "featured": false,
     "variants": [
       { "id": "8x10", "label": "8×10 Print", "price": 2499 },
@@ -70,11 +70,11 @@
     ]
   },
   {
-    "id": "mirror-lake-print",
-    "slug": "mirror-lake-print",
-    "title": "Mirror Lake",
-    "description": "Perfect reflections at sunset. A calming centerpiece for home or office.",
-    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
+    "id": "golden-temple-reflection-print",
+    "slug": "golden-temple-reflection-print",
+    "title": "Golden Temple Reflection",
+    "description": "Peaceful reflection of the Harmandir Sahib (Golden Temple) in Amritsar during twilight. A calming centerpiece for home or office.",
+    "image": "https://images.unsplash.com/photo-1585128792020-803d29415281?w=800&q=80",
     "category": "landscapes",
     "featured": true,
     "variants": [
@@ -85,12 +85,12 @@
     ]
   },
   {
-    "id": "garden-ceremony-print",
-    "slug": "garden-ceremony-print",
-    "title": "Garden Ceremony",
-    "description": "A sunlit garden wedding ceremony. Elegant and full of natural beauty.",
-    "image": "https://images.unsplash.com/photo-1465495976277-14efa3ebe1c4?w=800&q=80",
-    "category": "weddings",
+    "id": "jaisalmer-dunes-print",
+    "slug": "jaisalmer-dunes-print",
+    "title": "Jaisalmer Dunes",
+    "description": "Warm wind blowing sand ripples across the vast Thar desert of Rajasthan at sunset. Elegant and full of natural warmth.",
+    "image": "https://images.unsplash.com/photo-1590050752117-238cb0612b1b?w=800&q=80",
+    "category": "landscapes",
     "featured": false,
     "variants": [
       { "id": "8x10", "label": "8×10 Print", "price": 2499 },
@@ -99,12 +99,12 @@
     ]
   },
   {
-    "id": "forest-path-print",
-    "slug": "forest-path-print",
-    "title": "Forest Path",
-    "description": "Sunbeams filtering through ancient trees along a woodland trail.",
-    "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
-    "category": "fine-art",
+    "id": "kerala-backwater-serenity-print",
+    "slug": "kerala-backwater-serenity-print",
+    "title": "Kerala Backwater Serenity",
+    "description": "Traditional houseboats moving slowly under a canopy of coconut palms on Kerala's calm backwaters.",
+    "image": "https://images.unsplash.com/photo-1593693450476-c678a3c898c6?w=800&q=80",
+    "category": "landscapes",
     "featured": false,
     "variants": [
       { "id": "8x10", "label": "8×10 Print", "price": 2499 },

@@ -8,30 +8,30 @@ import { Award, Camera, MapPin } from "lucide-react";
 
 const HERO_SLIDES = [
   {
-    src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=85",
-    title: "Golden Hour Vows",
-    location: "Val d'Orcia, Tuscany",
+    src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1920&q=85",
+    title: "Royal Jodhpur Union",
+    location: "Mehrangarh Fort, Jodhpur",
     camera: "Sony α7R V • FE 85mm f/1.4 GM",
   },
   {
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=85",
-    title: "Alpine Dawn",
-    location: "Southern Alps, New Zealand",
+    src: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1920&q=85",
+    title: "Taj Mahal in Mist",
+    location: "Agra, Uttar Pradesh",
     camera: "Fujifilm GFX 100 II • GF 23mm f/4",
   },
   {
-    src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1920&q=85",
-    title: "Window Light Study",
-    location: "Paris, France",
+    src: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=1920&q=85",
+    title: "Munnar Valley Mist",
+    location: "Western Ghats, Kerala",
     camera: "Leica M11 • Summilux 35mm f/1.4",
   },
 ];
 
 const ACCOLADES = [
   "Leica Master Shot Winner",
-  "Vogue Weddings Feature",
+  "Vogue India Weddings Feature",
   "National Geographic Contributor",
-  "World Photography Awards Finalist",
+  "Better Photography India Winner",
 ];
 
 export default function Hero() {
@@ -79,7 +79,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-black/40 backdrop-blur-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-6"
         >
           <Camera size={15} />
-          <span>Julian Vance — Fine Art & Editorial Photography</span>
+          <span>Sathya Kasthuri — Fine Art & Heritage Photography</span>
         </motion.div>
 
         <motion.h1

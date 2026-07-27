@@ -8,13 +8,13 @@ export default function CategoryPreview() {
 
   const coverImages: Record<string, string> = {
     weddings:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+      "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80",
     portraits:
-      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
     events:
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
+      "https://images.unsplash.com/photo-1505236858219-8359eb4e4f2d?w=800&q=80",
     landscapes:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80",
   };
 
   return (
